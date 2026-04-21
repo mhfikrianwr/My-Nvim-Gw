@@ -60,4 +60,20 @@ return {
     })
   end,
   },
+  -- nord color scheme
+  {
+  "shaunsingh/nord.nvim",
+  lazy = false,
+  priority = 1000,
+  config = function()
+    require("configs.nord")
+    vim.cmd.colorscheme("nord")
+  end,
+  },
+  {
+  "folke/snacks.nvim",
+  opts = function()
+    return require("configs.snacks")
+  end,
+  }
 }

@@ -50,6 +50,10 @@ void dbg_out(Head H, Tail... T) {
 #define vl vector<ll>
 #define vvl vector<vl> 
 #define vpl vector<pair<ll, ll>>
+#define pb push_back
+#define fr first
+#define sc second
+#define pb(x,y) push_back({x,y}) 
 
 // maps
 #define ml map<ll,ll>
@@ -67,7 +71,7 @@ const ll NINF = LLONG_MIN;
 // output
 #define endl "\n"
 #define en "\n"
-#define cen "\n";
+#define cen cout << "\n"
 
 const int dx[] = {1,0,-1,0};
 const int dy[] = {0,1,0,-1};
@@ -80,6 +84,6 @@ void solve(){
 int main() {
   gg;
   int t = 1;
-  cin>>t;
+  //cin>>t;
   while(t--)solve();
 }
